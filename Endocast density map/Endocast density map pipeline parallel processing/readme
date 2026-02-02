@@ -15,11 +15,12 @@ In python:
 %run brain_shape_analyzer.py create-config my_config.json
 
 5. Update the file paths in the configuration to match the new PC's directory structure. You can do this either by manually editing the JSON file or by using the update_config.py script we created (which you'd need to update with the new paths).
-
+%run update_config.py
 
 6. Run the analysis with:
 python%run brain_shape_analyzer.py run my_config.json
 
 
 The JSON file contains machine-specific paths, so it's not directly transferable between computers. This approach of regenerating the configuration ensures that all paths are correct for the new environment.
+
 
