@@ -9,13 +9,17 @@ Your_Project_Folder/
 
 2. Copy all your Python files to the new PC, maintaining the same structure.
 3. Copy your input data files to the Data directory.
+
 4. Create a new configuration file on the new PC by running:
 In python:
 %run brain_shape_analyzer.py create-config my_config.json
 
 5. Update the file paths in the configuration to match the new PC's directory structure. You can do this either by manually editing the JSON file or by using the update_config.py script we created (which you'd need to update with the new paths).
+
+
 6. Run the analysis with:
 python%run brain_shape_analyzer.py run my_config.json
 
 
 The JSON file contains machine-specific paths, so it's not directly transferable between computers. This approach of regenerating the configuration ensures that all paths are correct for the new environment.
+
